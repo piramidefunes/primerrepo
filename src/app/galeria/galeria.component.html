@@ -1,0 +1,53 @@
+
+<div class="container bg-danger bg-opacity-10 border border-dark dim1 mt-5 rounded">
+    <div id="carrusel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <!--data-bs-ride="carousel" hace que luego del primer click se reproduzca automaticamente  -->
+      <!--class="carousel slide carousel-fade" por desvanecimiento de imagen  -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="3" aria-label="Slide 3"></button>  
+    </div>
+      <div class="carousel-inner mt-2">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <!--data-bs-interval="1000" hace que el intervalo de la imagen sea de 1s -->
+          <img src={{images[0].url}} class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-primary">{{images[0].titulo}}</h5>
+            <p>{{images[0].subtitulo}}</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src={{images[1].url}} class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-info">{{images[1].titulo}}</h5>
+            <p>{{images[1].subtitulo}}</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src={{images[2].url}} class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-success">{{images[2].titulo}}</h5>
+            <p class="text-white">{{images[2].subtitulo}}</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src={{images[3].url}} class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-dark">{{images[3].titulo}}</h5>
+            <p class="text-white-50">{{images[3].subtitulo}}</p>
+          </div>
+        </div>
+  
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
