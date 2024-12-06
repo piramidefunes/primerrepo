@@ -1,6 +1,7 @@
 
 
-<div class="container mt-4 mb-4 bg-success bg-opacity-75 border border-dark rounded">
+  <div class="container mb-2 mt-2 bg-dark bg-opacity-75 border border-dark rounded">
+
     <div id="carrusel" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <!--data-bs-ride="carousel" hace que luego del primer click se reproduzca automaticamente  -->
       <!--class="carousel slide carousel-fade" por desvanecimiento de imagen  -->
@@ -9,32 +10,37 @@
         <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carrusel" data-bs-slide-to="3" aria-label="Slide 3"></button>  
-    </div>
-      <div class="carousel-inner mt-2 mb-2">
+      </div>
+
+      <div class="carousel-inner">
+
         <div class="carousel-item active" data-bs-interval="2000">
           <!--data-bs-interval="1000" hace que el intervalo de la imagen sea de 1s -->
-          <img src={{images[0].url}} class="d-block w-100 rounded-pill" alt="...">
+          <img src={{images[0].url}} class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5 class="text-primary">{{images[0].titulo}}</h5>
-            <p>{{images[0].subtitulo}}</p>
+            <h5 class="text-primary">jajajajaja</h5>
+            <b style="font-size: 3rem;" class="text-dark">hahahahahahahahahahahahah</b>
           </div>
         </div>
+
         <div class="carousel-item" data-bs-interval="2000">
-          <img src={{images[1].url}} class="d-block w-100 rounded-pill" alt="...">
+          <img src={{images[1].url}} class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5 class="text-info">{{images[1].titulo}}</h5>
             <p>{{images[1].subtitulo}}</p>
           </div>
         </div>
+
         <div class="carousel-item" data-bs-interval="2000">
-          <img src={{images[2].url}} class="d-block w-100 rounded-pill" alt="...">
+          <img src={{images[2].url}} class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5 class="text-success">{{images[2].titulo}}</h5>
             <p class="text-white">{{images[2].subtitulo}}</p>
           </div>
         </div>
+        
         <div class="carousel-item" data-bs-interval="2000">
-          <img src={{images[3].url}} class="d-block w-100 rounded-pill" alt="...">
+          <img src={{images[3].url}} class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5 class="text-dark">{{images[3].titulo}}</h5>
             <p class="text-white-50">{{images[3].subtitulo}}</p>
@@ -51,5 +57,6 @@
         <span class="visually-hidden">Siguiente</span>
       </button>
     </div>
+
   </div>
 
