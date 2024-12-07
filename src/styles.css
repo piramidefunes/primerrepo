@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-.dim1{
-    width: 640px;
-    height: 400px;
-}
+body {
+    background-image:url(assets/imgs/qsr3es2.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
